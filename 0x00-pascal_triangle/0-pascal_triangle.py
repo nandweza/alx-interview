@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+Pascal triangle Interview question.
+"""
+
+
 def pascal_triangle(n):
     """
     function that returns a lsit of lists of integers.
