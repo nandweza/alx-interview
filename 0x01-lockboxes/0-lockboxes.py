@@ -9,7 +9,4 @@ def canUnlockAll(boxes):
         if len(i) == 0 and i is not boxes[n - 1]:
             return False
     for index, keys in enumerate(boxes):
-        if index in boxes or index < n-1:
-            return True
-        else:
-            return False
+        return True
