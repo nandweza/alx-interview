@@ -5,8 +5,10 @@
 def canUnlockAll(boxes):
     """method that determines if all the boxes can be opened"""
     n = len(boxes)
-    for i in boxes:
-        if len(i) == 0 and i is not boxes[n - 1]:
-            return False
-    for index, keys in enumerate(boxes):
-        return True
+    keys = boxes[0]
+    Locked_box = [False] + [True] * (n - 1)
+    for key in keys:
+        if ((key < n)) and (Locked_box[key] is True):
+            Locked_box[key] = False
+            keys.extend(boxes[key])
+    return not any(Locked_box)
