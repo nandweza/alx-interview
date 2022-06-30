@@ -1,11 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Minimum Operations"""
 
 
 def minOperations(n):
     """calculates the fewest number of operations needed
     to result in exactly n H characters in the file."""
-    if not isinstance(n, int):
+    if (n < 2):
         return 0
 
     Ops, i = 0, 2
