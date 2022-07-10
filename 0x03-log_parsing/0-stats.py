@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""Log parsing"""
+"""Log parsing
+"""
 
 import sys
+
 
 filesize, count = 0, 0
 codes = ["200", "301", "400", "401", "403", "404", "405", "500"]
